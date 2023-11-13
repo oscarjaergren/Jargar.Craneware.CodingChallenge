@@ -1,10 +1,9 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
     <IsPackable>false</IsPackable>
-    <RootNamespace>CodingChallenge.ReversingString.Tests</RootNamespace>
-    <EnableNETAnalyzers>true</EnableNETAnalyzers>
+    <RootNamespace>CodingChallenge.CardGame.Tests</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
@@ -14,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\ReversingString\ReversingString.csproj" />
+    <ProjectReference Include="..\CardGame\CardGame.csproj" />
   </ItemGroup>
 
 </Project>
