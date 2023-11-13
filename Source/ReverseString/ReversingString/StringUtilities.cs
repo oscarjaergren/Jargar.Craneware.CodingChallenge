@@ -2,10 +2,17 @@
 
 namespace CodingChallenge.ReversingString;
 
-public class StringUtilities
+public class StringUtilities : IStringUtilities
 {
-    public static string Reverse(string s)
+    public string ReverseString(string input)
     {
-        throw new NotImplementedException();
+        if (string.IsNullOrWhiteSpace(input))
+        {
+            return input;
+        }
+
+        char[] charArray = input.ToCharArray();
+        Array.Reverse(charArray);
+        return new string(charArray);
     }
 }
