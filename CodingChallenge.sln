@@ -21,7 +21,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CardGame.Tests", "Source\Ca
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReversingString", "Source\ReverseString\ReversingString\ReversingString.csproj", "{0FF9F6BC-92AD-439F-8CB6-FAB959F681B1}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReverseString.Tests", "Source\ReverseString\ReverseString.Tests\ReverseString.Tests.csproj", "{A51B55EC-0419-42DA-A828-79E9310D2164}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReversingString.Tests", "Source\ReverseString\ReverseString.Tests\ReversingString.Tests.csproj", "{A51B55EC-0419-42DA-A828-79E9310D2164}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
