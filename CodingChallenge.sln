@@ -21,7 +21,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CardGame.Tests", "Source\Ca
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReversingString", "Source\ReverseString\ReversingString\ReversingString.csproj", "{0FF9F6BC-92AD-439F-8CB6-FAB959F681B1}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReversingString.Tests", "Source\ReverseString\ReverseString.Tests\ReversingString.Tests.csproj", "{A51B55EC-0419-42DA-A828-79E9310D2164}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReversingString.Tests", "Source\ReverseString\ReversingString.Tests\ReversingString.Tests.csproj", "{8550BEA7-AA5B-4B3F-B7CC-BBEDDB7388D2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,10 +41,10 @@ Global
 		{0FF9F6BC-92AD-439F-8CB6-FAB959F681B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0FF9F6BC-92AD-439F-8CB6-FAB959F681B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0FF9F6BC-92AD-439F-8CB6-FAB959F681B1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A51B55EC-0419-42DA-A828-79E9310D2164}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A51B55EC-0419-42DA-A828-79E9310D2164}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A51B55EC-0419-42DA-A828-79E9310D2164}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A51B55EC-0419-42DA-A828-79E9310D2164}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8550BEA7-AA5B-4B3F-B7CC-BBEDDB7388D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8550BEA7-AA5B-4B3F-B7CC-BBEDDB7388D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8550BEA7-AA5B-4B3F-B7CC-BBEDDB7388D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8550BEA7-AA5B-4B3F-B7CC-BBEDDB7388D2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,7 +55,7 @@ Global
 		{4292ED72-BF65-4849-8F84-8304D4675667} = {0EBBFC1C-25C8-43AF-8BE1-C1758466F89C}
 		{BE3C3332-2C7B-441D-BE78-A13280950859} = {0EBBFC1C-25C8-43AF-8BE1-C1758466F89C}
 		{0FF9F6BC-92AD-439F-8CB6-FAB959F681B1} = {EAA9265B-0A71-491D-8BC7-FE1CBB40C4CA}
-		{A51B55EC-0419-42DA-A828-79E9310D2164} = {EAA9265B-0A71-491D-8BC7-FE1CBB40C4CA}
+		{8550BEA7-AA5B-4B3F-B7CC-BBEDDB7388D2} = {EAA9265B-0A71-491D-8BC7-FE1CBB40C4CA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E2928D1B-E0FD-47C3-9C5C-DC5D7913D56F}
