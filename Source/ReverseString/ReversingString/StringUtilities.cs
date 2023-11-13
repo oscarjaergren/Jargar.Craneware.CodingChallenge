@@ -1,12 +1,11 @@
 ﻿using System;
 
-namespace CodingChallenge.ReversingString
+namespace CodingChallenge.ReversingString;
+
+public class StringUtilities
 {
-    public class StringUtilities
+    public static string Reverse(string s)
     {
-        public static string Reverse(string s)
-        {
-            throw new NotImplementedException();
-        }
+        throw new NotImplementedException();
     }
 }

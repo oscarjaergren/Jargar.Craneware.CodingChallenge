@@ -1,11 +1,10 @@
 ﻿using System;
 
-namespace CodingChallenge.CardGame
-{
-    public interface ICard : IEquatable<ICard>
-    {
-        Suit Suit { get; }
+namespace CodingChallenge.CardGame;
 
-        Value Value { get; }
-    }
+public interface ICard : IEquatable<ICard>
+{
+    Suit Suit { get; }
+
+    Value Value { get; }
 }

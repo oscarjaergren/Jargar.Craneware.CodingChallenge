@@ -1,19 +1,18 @@
-﻿namespace CodingChallenge.CardGame
+﻿namespace CodingChallenge.CardGame;
+
+public enum Value
 {
-    public enum Value
-    {
-        Ace,
-        Two,
-        Three,
-        Four,
-        Five,
-        Six,
-        Seven,
-        Eight,
-        Nine,
-        Ten,
-        Jack,
-        Queen,
-        King
-    }
+    Ace,
+    Two,
+    Three,
+    Four,
+    Five,
+    Six,
+    Seven,
+    Eight,
+    Nine,
+    Ten,
+    Jack,
+    Queen,
+    King
 }

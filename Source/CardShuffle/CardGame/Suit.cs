@@ -1,10 +1,9 @@
-﻿namespace CodingChallenge.CardGame
+﻿namespace CodingChallenge.CardGame;
+
+public enum Suit
 {
-    public enum Suit
-    {
-        Clubs,
-        Diamonds,
-        Hearts,
-        Spades
-    }
+    Clubs,
+    Diamonds,
+    Hearts,
+    Spades
 }

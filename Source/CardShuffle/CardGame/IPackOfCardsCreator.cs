@@ -1,7 +1,6 @@
-﻿namespace CodingChallenge.CardGame
+﻿namespace CodingChallenge.CardGame;
+
+public interface IPackOfCardsCreator
 {
-    public interface IPackOfCardsCreator
-    {
-        IPackOfCards Create();
-    }
+    IPackOfCards Create();
 }
