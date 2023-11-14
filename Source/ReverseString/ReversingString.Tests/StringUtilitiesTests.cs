@@ -1,41 +1,70 @@
 ﻿using NUnit.Framework;
+using System;
+using System.Collections.Generic;
 
 namespace CodingChallenge.ReversingString.Tests;
 
 [TestFixture]
+[TestFixture]
 public class StringUtilitiesTests
 {
-    readonly IStringUtilities _stringUtilities;
-
-    public StringUtilitiesTests()
+    [TestCaseSource(nameof(TestCases))]
+    [Category("ToCharArrayStringReverse")]
+    public void ToCharArrayStringReverse_WhenCalledWithValidInput_ShouldReturnReversedString(
+        string input,
+        string expectedOutput,
+        string failureReason)
     {
-        //Ideally would be constructor injected intead
-        _stringUtilities = new StringUtilities();
+        ExecuteReverseTest(new ToCharArrayStringReverse(), input, expectedOutput, failureReason);
     }
 
-    [TestCase("FooBazQux", "xuQzaBooF")]
-    [TestCase("Hello Bar", "raB olleH")]
-    [TestCase("A", "A")]
-    [TestCase("123!@#", "#@!321")]
-    [TestCase("Unicode测试", "试测edocinU")]
-    public void Reverse_WhenCalledWithValidInput_ShouldReturnReversedString(string input, string expectedOutput)
+    [TestCaseSource(nameof(TestCases))]
+    [Category("StringBuilderReverse")]
+    public void StringBuilderReverse_WhenCalledWithValidInput_ShouldReturnReversedString(
+        string input,
+        string expectedOutput,
+        string failureReason)
     {
-        string result = _stringUtilities.ReverseString(input);
-        Assert.AreEqual(expectedOutput, result);
+        ExecuteReverseTest(new StringBuilderReverse(), input, expectedOutput, failureReason);
     }
 
-    [TestCase(null, null)]
-    public void Reverse_WhenCalledWithNullInput_ShouldReturnEmptyString(string input, string expectedOutput)
+    [TestCaseSource(nameof(TestCases))]
+    [Category("LinqStringReverse")]
+    public void LinqStringReverse_WhenCalledWithValidInput_ShouldReturnReversedString(
+        string input,
+        string expectedOutput,
+        string failureReason)
     {
-        string result = _stringUtilities.ReverseString(input);
-        Assert.AreEqual(expectedOutput, result);
+        ExecuteReverseTest(new LinqStringReverse(), input, expectedOutput, failureReason);
     }
 
-    [Test]
-    public void Reverse_WhenCalledWithWhitespaceOnly_ShouldPreserveWhitespace()
+    private static void ExecuteReverseTest(
+        IStringUtilities implementation,
+        string input,
+        string expectedOutput,
+        string failureReason)
     {
-        const string input = " \t\n\r\f\v";
-        string result = _stringUtilities.ReverseString(input);
-        Assert.AreEqual(input, result);
+        string result = null;
+        try
+        {
+            result = implementation.ReverseString(input);
+        }
+        catch (Exception ex)
+        {
+            Assert.Fail($"{implementation.GetType().Name} failed for input: '{input}'. Reason: {failureReason} with exception {ex.Message}");
+        }
+
+        Assert.AreEqual(expectedOutput, result, $"{implementation.GetType().Name} failed for input: '{input}'. \n Reason: {failureReason}");
+    }
+
+    public static IEnumerable<object[]> TestCases()
+    {
+        yield return new object[] { "FooBazQux", "xuQzaBooF", "Reverse order of characters" };
+        yield return new object[] { "Hello Bar", "raB olleH", "Reverse order of characters with space" };
+        yield return new object[] { "A", "A", "Single character input" };
+        yield return new object[] { "123!@#", "#@!321", "Alphanumeric characters and symbols" };
+        yield return new object[] { "Unicode测试", "试测edocinU", "Unicode characters" };
+        yield return new object[] { null, null, "Null input" };
+        yield return new object[] { " \t\n\r\f\v", " \t\n\r\f\v", "Whitespace input" };
     }
 }
