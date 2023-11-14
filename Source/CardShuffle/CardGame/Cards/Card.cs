@@ -19,6 +19,8 @@ public class Card : ICard
         return Suit == other.Suit && Value == other.Value;
     }
 
+    //ToDo: Consider this as potential implementations of Equals instead
+
     //public override bool Equals(object obj)
     //{
     //    if (obj is ICard otherCard)

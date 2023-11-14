@@ -23,7 +23,15 @@ public class PackOfCards : IPackOfCards
 
     public ICard TakeCardFromTopOfPack()
     {
-        throw new NotImplementedException();
+        if (cards.Count == 0)
+        {
+            return null;
+        }
+
+        ICard topCard = cards[0];
+        cards.RemoveAt(0);
+
+        return topCard;
     }
 
     public IEnumerator<ICard> GetEnumerator()

@@ -10,7 +10,6 @@ public class PackOfCardCreator : IPackOfCardsCreator
     {
         List<ICard> cards = new();
 
-        // Create a pack of cards with one card for each suit and value
         foreach (Suit suit in Enum.GetValues(typeof(Suit)))
         {
             foreach (Value value in Enum.GetValues(typeof(Value)))
