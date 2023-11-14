@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System;
 using CodingChallenge.CardGame.Cards;
+using CodingChallenge.CardGame.Shuffles;
 
 namespace CodingChallenge.CardGame.CardDeckCreator;
 
@@ -18,6 +19,6 @@ public class PackOfCardCreator : IPackOfCardsCreator
             }
         }
 
-        return new PackOfCards(cards);
+        return new PackOfCards(cards, new FisherYatesShuffle());
     }
 }
