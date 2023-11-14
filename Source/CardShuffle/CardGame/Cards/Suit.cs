@@ -1,4 +1,4 @@
-﻿namespace CodingChallenge.CardGame.Card;
+﻿namespace CodingChallenge.CardGame.Cards;
 
 public enum Suit
 {

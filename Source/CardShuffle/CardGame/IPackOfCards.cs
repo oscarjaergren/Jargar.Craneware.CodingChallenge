@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using CodingChallenge.CardGame.Card;
+using CodingChallenge.CardGame.Cards;
 
 namespace CodingChallenge.CardGame;
 

@@ -1,10 +1,11 @@
-﻿using CodingChallenge.CardGame.Card;
-using CodingChallenge.CardGame.CardDeckCreator;
+﻿using CodingChallenge.CardGame.CardDeckCreator;
+using CodingChallenge.CardGame.Cards;
 using NUnit.Framework;
 using System;
 using System.Linq;
 
 namespace CodingChallenge.CardGame.Tests.PackOfCards;
+
 internal class TakeCardFromTopOfPackTests
 {
     // Test 3: Test that a card is removed from the deck
