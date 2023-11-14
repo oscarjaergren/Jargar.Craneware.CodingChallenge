@@ -1,4 +1,4 @@
-﻿namespace CodingChallenge.CardGame;
+﻿namespace CodingChallenge.CardGame.CardDeckCreator;
 
 public interface IPackOfCardsCreator
 {
