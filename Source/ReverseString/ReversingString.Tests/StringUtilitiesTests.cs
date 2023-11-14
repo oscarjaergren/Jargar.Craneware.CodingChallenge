@@ -29,6 +29,16 @@ public class StringUtilitiesTests
     }
 
     [TestCaseSource(nameof(TestCases))]
+    [Category("StringBuilderReverse")]
+    public void ReadOnlySpanStringReverse_WhenCalledWithValidInput_ShouldReturnReversedString(
+    string input,
+    string expectedOutput,
+    string failureReason)
+    {
+        ExecuteReverseTest(new ReadOnlySpanStringReverse(), input, expectedOutput, failureReason);
+    }
+
+    [TestCaseSource(nameof(TestCases))]
     [Category("LinqStringReverse")]
     public void LinqStringReverse_WhenCalledWithValidInput_ShouldReturnReversedString(
         string input,

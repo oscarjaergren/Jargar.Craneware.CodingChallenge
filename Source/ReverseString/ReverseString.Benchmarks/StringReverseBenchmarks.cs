@@ -10,31 +10,37 @@ namespace ReverseString.Benchmarks;
 public class StringReverseBenchmarks
 {
     [Benchmark]
-    public void ToCharArrayStringReverseBenchmark()
+    public string ToCharArrayStringReverseBenchmark()
     {
         var implementation = new ToCharArrayStringReverse();
-        ExecuteBenchmark(implementation);
+        return ExecuteBenchmark(implementation);
     }
 
     [Benchmark]
-    public void StringBuilderReverseBenchmark()
+    public string StringBuilderReverseBenchmark()
     {
         var implementation = new StringBuilderReverse();
-        ExecuteBenchmark(implementation);
+        return ExecuteBenchmark(implementation);
     }
 
     [Benchmark]
-    public void LinqStringReverseBenchmark()
+    public string ReadOnlySpanStringReverseBenchmark()
     {
-        var implementation = new LinqStringReverse();
-        ExecuteBenchmark(implementation);
+        var implementation = new ReadOnlySpanStringReverse();
+        return ExecuteBenchmark(implementation);
     }
 
-    private static void ExecuteBenchmark(IStringUtilities implementation)
+    [Benchmark]
+    public string LinqStringReverseBenchmark()
+    {
+        var implementation = new LinqStringReverse();
+        return ExecuteBenchmark(implementation);
+    }
+
+    private static string ExecuteBenchmark(IStringUtilities implementation)
     {
         const string input = "BenchmarkTest";
-        string result = implementation.ReverseString(input);
-        Console.WriteLine(result); // To prevent optimizations from removing the code
+        return implementation.ReverseString(input);
     }
 }
 
