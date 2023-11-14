@@ -1,5 +1,5 @@
 ﻿namespace CodingChallenge.ReversingString.Tests;
-internal class ReverseStringTestCase
+internal sealed class ReverseStringTestCase
 {
     internal required string Input { get; set; }
     internal required string ExpectedOutput { get; set; }

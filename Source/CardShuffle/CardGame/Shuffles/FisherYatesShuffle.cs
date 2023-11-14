@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace CodingChallenge.CardGame.Shuffles;
 
-internal class FisherYatesShuffle : IShuffle
+internal sealed class FisherYatesShuffle : IShuffle
 {
     //  ToDo: Write about Big O complexity
     //  http://en.wikipedia.org/wiki/Fisher-Yates_shuffle

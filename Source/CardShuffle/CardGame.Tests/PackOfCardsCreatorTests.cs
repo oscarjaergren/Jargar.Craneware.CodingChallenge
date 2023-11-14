@@ -4,13 +4,12 @@ using System.Linq;
 
 namespace CodingChallenge.CardGame.Tests;
 
-internal class PackOfCardsCreatorTests
+internal sealed class PackOfCardsCreatorTests
 {
     [Test]
     public void PackOfCards_Creation_Ensures_Correct_Number()
     {
-        IPackOfCardsCreator packCreator = new PackOfCardCreator();
-        var cardPack = packCreator.Create();
+        var cardPack = new PackOfCardCreator().Create();
 
         Assert.AreEqual(52, cardPack.Count, "The pack should contain 52 cards.");
     }
@@ -18,8 +17,7 @@ internal class PackOfCardsCreatorTests
     [Test]
     public void PackOfCards_Creation_Ensures_Uniqueness()
     {
-        IPackOfCardsCreator packCreator = new PackOfCardCreator();
-        var cardPack = packCreator.Create();
+        var cardPack = new PackOfCardCreator().Create();
 
         var distinctCards = cardPack.Distinct().ToList();
 

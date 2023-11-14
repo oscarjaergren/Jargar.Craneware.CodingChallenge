@@ -6,7 +6,7 @@ using System.Linq;
 
 namespace CodingChallenge.CardGame.Tests.PackOfCards;
 
-internal class TakeCardFromTopOfPackTests
+internal sealed class TakeCardFromTopOfPackTests
 {
     // Test 3: Test that a card is removed from the deck
     [Test]
