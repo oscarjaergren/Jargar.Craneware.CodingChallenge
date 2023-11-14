@@ -30,6 +30,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Images", "Images", "{B524FCFA-A6EE-47CC-939B-335A664107ED}"
 	ProjectSection(SolutionItems) = preProject
 		Source\ReverseString\Images\ReverseStringBenchmarks.jpg = Source\ReverseString\Images\ReverseStringBenchmarks.jpg
+		Source\ReverseString\Images\ReverseStringUnitTestsRun.jpg = Source\ReverseString\Images\ReverseStringUnitTestsRun.jpg
 	EndProjectSection
 EndProject
 Global
