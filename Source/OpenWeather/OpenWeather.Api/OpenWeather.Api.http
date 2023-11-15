@@ -1,0 +1,6 @@
+@OpenWeather.Api_HostAddress = http://localhost:5144
+
+GET {{OpenWeather.Api_HostAddress}}/api/average-temperature/1.23/4.56
+Accept: application/json
+
+###

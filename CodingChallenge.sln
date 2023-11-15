@@ -14,6 +14,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CardShuffle", "CardShuffle", "{0EBBFC1C-25C8-43AF-8BE1-C1758466F89C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReverseString", "ReverseString", "{EAA9265B-0A71-491D-8BC7-FE1CBB40C4CA}"
+	ProjectSection(SolutionItems) = preProject
+		OpenWeather.Api\WeatherForecast.cs = OpenWeather.Api\WeatherForecast.cs
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CardGame", "Source\CardShuffle\CardGame\CardGame.csproj", "{4292ED72-BF65-4849-8F84-8304D4675667}"
 EndProject
@@ -23,7 +26,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReversingString", "Source\R
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReversingString.Tests", "Source\ReverseString\ReversingString.Tests\ReversingString.Tests.csproj", "{8550BEA7-AA5B-4B3F-B7CC-BBEDDB7388D2}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OpenWeatherRestApi", "OpenWeatherRestApi", "{03FD2D66-F012-40FF-B576-15FE4709CB8F}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OpenWeather", "OpenWeather", "{03FD2D66-F012-40FF-B576-15FE4709CB8F}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReverseString.Benchmarks", "Source\ReverseString\ReverseString.Benchmarks\ReverseString.Benchmarks.csproj", "{5111DEC0-29A9-480E-A29B-52C8A7828218}"
 EndProject
@@ -32,6 +35,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Images", "Images", "{B524FC
 		Source\ReverseString\Images\ReverseStringBenchmarks.jpg = Source\ReverseString\Images\ReverseStringBenchmarks.jpg
 		Source\ReverseString\Images\ReverseStringUnitTestsRun.jpg = Source\ReverseString\Images\ReverseStringUnitTestsRun.jpg
 	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenWeather.Api", "Source\OpenWeather\OpenWeather.Api\OpenWeather.Api.csproj", "{878C625C-2A5B-4418-8DF8-9A4C42B454D3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -59,6 +64,10 @@ Global
 		{5111DEC0-29A9-480E-A29B-52C8A7828218}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5111DEC0-29A9-480E-A29B-52C8A7828218}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5111DEC0-29A9-480E-A29B-52C8A7828218}.Release|Any CPU.Build.0 = Release|Any CPU
+		{878C625C-2A5B-4418-8DF8-9A4C42B454D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{878C625C-2A5B-4418-8DF8-9A4C42B454D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{878C625C-2A5B-4418-8DF8-9A4C42B454D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{878C625C-2A5B-4418-8DF8-9A4C42B454D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -73,6 +82,7 @@ Global
 		{03FD2D66-F012-40FF-B576-15FE4709CB8F} = {D7EEE6A0-40C3-495A-84BA-DCFF936E8195}
 		{5111DEC0-29A9-480E-A29B-52C8A7828218} = {EAA9265B-0A71-491D-8BC7-FE1CBB40C4CA}
 		{B524FCFA-A6EE-47CC-939B-335A664107ED} = {EAA9265B-0A71-491D-8BC7-FE1CBB40C4CA}
+		{878C625C-2A5B-4418-8DF8-9A4C42B454D3} = {03FD2D66-F012-40FF-B576-15FE4709CB8F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E2928D1B-E0FD-47C3-9C5C-DC5D7913D56F}
