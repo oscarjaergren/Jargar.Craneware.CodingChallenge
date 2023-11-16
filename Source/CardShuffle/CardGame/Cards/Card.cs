@@ -1,15 +1,10 @@
 ﻿namespace CodingChallenge.CardGame.Cards;
 
-public class Card : ICard
+public class Card(Suit suit, Value value) : ICard
 {
-    public Suit Suit { get; }
-    public Value Value { get; }
+    public Suit Suit { get; } = suit;
 
-    public Card(Suit suit, Value value)
-    {
-        Suit = suit;
-        Value = value;
-    }
+    public Value Value { get; } = value;
 
     public bool Equals(ICard other)
     {
@@ -19,21 +14,8 @@ public class Card : ICard
         return Suit == other.Suit && Value == other.Value;
     }
 
-    //ToDo: Consider this as potential implementations of Equals instead
-
-    //public override bool Equals(object obj)
-    //{
-    //    if (obj is ICard otherCard)
-    //    {
-    //        return Equals(otherCard);
-    //    }
-
-    //    return false;
-    //}
-
-    //public override int GetHashCode()
-    //{
-    //    // Simple hash code combining the hash codes of Suit and Value
-    //    return Suit.GetHashCode() ^ Value.GetHashCode();
-    //}
+    public override int GetHashCode()
+    {
+        return Suit.GetHashCode() ^ Value.GetHashCode();
+    }
 }

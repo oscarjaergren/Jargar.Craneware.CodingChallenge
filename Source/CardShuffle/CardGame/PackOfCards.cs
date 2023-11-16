@@ -5,16 +5,10 @@ using System.Collections.Generic;
 
 namespace CodingChallenge.CardGame;
 
-public class PackOfCards : IPackOfCards
+public class PackOfCards(List<ICard> cards, IShuffle shuffle) : IPackOfCards
 {
-    private List<ICard> _cards;
-    private readonly IShuffle _shuffle;
-
-    public PackOfCards(List<ICard> cards, IShuffle shuffle)
-    {
-        _cards = cards;
-        _shuffle = shuffle;
-    }
+    private List<ICard> _cards = cards;
+    private readonly IShuffle _shuffle = shuffle;
 
     public int Count => _cards.Count;
 

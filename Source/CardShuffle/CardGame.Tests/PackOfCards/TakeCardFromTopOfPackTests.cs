@@ -12,8 +12,7 @@ internal sealed class TakeCardFromTopOfPackTests
     [Test]
     public void Take_Card_From_Top_Of_Pack_Removes_Card()
     {
-        IPackOfCardsCreator packCreator = new PackOfCardCreator();
-        var cardPack = packCreator.Create();
+        var cardPack = new PackOfCardCreator().Create();
         int initialCount = cardPack.Count;
 
         ICard firstCard = cardPack.ElementAt(0);

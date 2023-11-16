@@ -6,8 +6,8 @@ namespace CodingChallenge.CardGame.Shuffles;
 
 internal sealed class FisherYatesShuffle : IShuffle
 {
-    //  ToDo: Write about Big O complexity
     //  http://en.wikipedia.org/wiki/Fisher-Yates_shuffle
+    //  O(N) Time complexity
     public void Shuffle(ref List<ICard> cards)
     {
         Random random = new();
